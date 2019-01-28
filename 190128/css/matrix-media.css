@@ -1,10 +1,11 @@
 body {
-	background:#2E363F;
+	background:#0d0d0d;
 }
 
 #header {
-	background-color: #1f262d;
-   margin-top:10px;
+	background-color: #0d0d0d;
+	  margin-top:0px;
+	  z-index:1;
 }
 #search input[type=text], #search button {
 	background-color: #28b779;
