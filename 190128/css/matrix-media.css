@@ -8,41 +8,43 @@ body {
 	  z-index:1;
 }
 #search input[type=text], #search button {
-	background-color: #28b779;
+	background-color: #fff;
+	border-radius:0 3px 3px 0;
 }
 #search input[type=text]:focus {
 	color: #777777;
 }
-#sidebar > ul{border-bottom: 1px solid #37414b}
+#sidebar > ul{}
 #sidebar > ul > li {
-	border-top: 1px solid #37414b; border-bottom: 1px solid #1f262d;
+	background:#080808; border-top: 1px solid #37414b; border-image:url(../img/ico/line01.png)15;
 }
 #sidebar > ul > li.active {
-    background-color: #27a9e3; border-bottom: 1px solid #27a9e3;  border-top: 1px solid #27a9e3;
+    background-color: #ffcc00; border-bottom: 1px solid #27a9e3;  border-top: 1px solid #27a9e3;
 }
-#sidebar > ul > li.active a{ color:#fff; text-decoration:none;}
+#sidebar > ul > li.active a{ color:#080808; text-decoration:none;}
 
 #sidebar > ul > li > a > .label {
 	background-color:#F66;
 }
-#sidebar > ul > li > a:hover {
-	background-color: #27a9e3; color:#fff;
+#sidebar > ul > li > a:hover, #sidebar > ul > li > a:active {
+	background-color: #ffcc00; color:#080808;
 }
 #sidebar > ul li ul {
-	background-color: #1e242b;
+	background-color: #373737;
 }
 #sidebar > ul li ul li a{ color:#939da8}
 #sidebar > ul li ul li a:hover, #sidebar > ul li ul li.active a {
-	color: #fff;
-	background-color: #28b779;
+	color: #080808;
+	background-color: #ffcc00;
 }
 
 
 #search input[type=text] {
-	background-color: #47515b; color: #fff; 
+	background-color: #fff; font-size:14px; color: #a1a098; 
+	border-radius:3px 0 0 3px;
 }
 #search input[type=text]:focus {
-	color: #2e363f; color: #fff; box-shadow:none;
+	color: #a1a098; box-shadow:none;
 }
 .dropdown-menu li a:hover, .dropdown-menu .active a, .dropdown-menu .active a:hover {
     color: #eeeeee;

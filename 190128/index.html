@@ -11,14 +11,19 @@
 <link rel="stylesheet" href="css/matrix-media.css" />
 <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/jquery.gritter.css" />
+<!--logo_font-->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet"> 
 </head>
 <body>
 
+
+<!--header_wrap-->
+<div class="header_wrap">
 <!--Header-part-->
 <div id="header">
   <h1><a href="dashboard.html">COWINPOT</a></h1>
-<!--top-Header-menu-->
+<!--top-Header-menu--> 
 <div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav">
       <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
@@ -48,7 +53,8 @@
   <!--close-top-Header-menu-->  
 </div>
 <!--close-Header-part--> 
-
+</div>
+<!--//header_wrap-->
 
 
 
@@ -59,20 +65,31 @@
 
 <!--start-top-serch-->
 <div id="search">
-    <input type="text" placeholder="Search here..."/>
+    <input type="text" placeholder="Search"/>
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
   </div>
   <!--close-top-serch-->
   
 
 
-  <a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+  <a href="#" class="visible-phone"><i class="icon icon-home"></i> All Games</a>
   <ul>
-    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
-    <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
-    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
-    <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
-    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>All Games</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>FOOTBALL</span></a> 
+      <ul>
+          <li><a href="form-common.html">프리미어 리그</a></li>
+          <li><a href="form-validation.html">프리미어 리그2</a></li>
+          <li><a href="form-wizard.html">WORLD</a></li>
+          <li><a href="form-wizard.html">WORLD CUP 2022</a></li>
+          <li><a href="form-wizard.html">KOREA</a></li>
+        </ul>
+    </li>
+    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>BASEBALL</span></a> </li>
+    <li><a href="tables.html"><i class="icon icon-th"></i> <span>BASKETBALL</span></a></li>
+    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>TENNIS</span></a></li>
+
+
+    <!--
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
       <ul>
         <li><a href="form-common.html">Basic Form</a></li>
@@ -113,6 +130,26 @@
       <span class="percent">87%</span>
       <div class="stat">604.44 / 4000 MB</div>
     </li>
+  -->
+
+
+<!--langauge_dropdown-->
+
+    <li class="btn-group">
+        <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle">한국어 <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">繁體中文</a></li>
+          <li><a href="#">Tiếng Việt</a></li>
+          <li><a href="#">简体中文</a></li>
+          <!--<li class="divider"></li>-->
+          <li><a href="#">English</a></li>
+        </ul>
+      </li>
+
+<!--//language_dropdown-->
+
+
+
   </ul>
 </div>
 <!--sidebar-menu-->
@@ -121,11 +158,18 @@
 <div id="content">
 <!--breadcrumbs-->
   <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+    <div id="breadcrumb"> 
+      <a href="index.html" title="Go to Home" class="tip-bottom"> All</a>
+      <a href="index.html" title="Go to Home" class="tip-bottom"> 1X2</a>
+      <a href="index.html" title="Go to Home" class="tip-bottom"> Handicap</a>
+      <a href="index.html" title="Go to Home" class="tip-bottom"> Live</a>
+      <a href="index.html" title="Go to Home" class="tip-bottom"> Result</a>
+    </div>
   </div>
 <!--End-breadcrumbs-->
 
 <!--Action boxes-->
+<!--
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
@@ -141,9 +185,9 @@
         <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> Error</a> </li>
 
       </ul>
-    </div>
+    </div>-->
 <!--End-Action boxes-->    
-</div>
+<!--/div>-->
 <!--//contents_wrap-->
 
 

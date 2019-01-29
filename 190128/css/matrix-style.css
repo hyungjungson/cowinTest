@@ -9,14 +9,15 @@ html, body{height:100%}
 
 body {
 	overflow-x: hidden;
-	margin-top: -10px; font-family: 'Lato', sans-serif; font-size:12px; color:#666;
+	margin-top: -10px; font-family: 'Noto Sans KR', sans-serif; font-size:12px; color:#666;
 }
 a{color:#666;}
 a:hover, a:focus {
 	text-decoration: none; color:#28b779;
 }
+li { list-style:none; }
 .dropdown-menu .divider{ margin:4px 0px;}
-.dropdown-menu{ min-width:180px;}
+.dropdown-menu{ min-width:180px; background:#080808; }
 .dropdown-menu > li > a{ padding:3px 10px; color:#666; font-size:12px;}
 .dropdown-menu > li > a i{ padding-right:3px;}
 .userphoto img{ width:19px; height:19px;}
@@ -46,6 +47,7 @@ hr{ border-top-color:#dadada;}
 .bg_lh{ background:#b6b3b3;}
 
 /* Header */
+.header_wrap { border-bottom:1px solid #ffcc00;}
 #header {
 	margin:0 auto;
 	height: 100px;
@@ -66,29 +68,31 @@ hr{ border-top-color:#dadada;}
 }
 #header h1 a {
 	display: block;
+	font-family:'Lato';
 	font-size: 37.5px;
 	font-weight: bold;
 	color: #ffcc00;
 }
 /* Search input */
 #search {
+	padding:15px 20px;
 	z-index: 25;
 	top: 6px;
 	right:10px;
 }
 #search input[type=text] {
-	padding: 4px 10px 5px;
+	padding: 5px 10px 5px;
 	border: 0;
-	width: 100px;
+	width: 155px;
 }
 #search button {
 	border: 0;
 	margin-left:-3px; 
 	margin-top: -11px;
-	padding: 5px 10px 4px;
+	padding: 5px 10px 5px;
 }
 #search button i {
-	opacity: 0.8; color:#fff;
+	opacity: 0.8; color:#a1a098;
 }
 #search button:hover i, #search button:active i {
 	opacity: 1;
@@ -98,27 +102,27 @@ hr{ border-top-color:#dadada;}
 /* Top user navigation */
 #user-nav {
 	position: absolute;
-	left: 220px;
-	top:0px;
+	left: 285px;
+	top:35px;
 	z-index: 20;
 	margin: 0;
 }
 #user-nav > ul {
 	margin: 0;
 	padding: 0;
-	list-style: none; border-right: 1px solid #2e363f;border-left: 1px solid #000;
+	list-style: none; 
 }
 #user-nav > ul > li {
 	float: left;
 	list-style-type: none;
 	margin: 0;
 	position: relative;
-	padding: 0; border-left: 1px solid #2e363f; border-right: 1px solid #000;
+	padding: 0; 
 }
 #user-nav > ul > li > a {
 	padding:9px 10px;
 	display: block;
-	font-size: 11px;
+	font-size: 16px;
 }
 #user-nav > ul > li > a:hover, #user-nav > ul > li.open > a {
 	color: #ffffff;  background:#000;
@@ -153,15 +157,15 @@ hr{ border-top-color:#dadada;}
 	display: block;
 	float: left;
 	position: relative;
-	width: 220px;
+	width: 250px;
 	z-index: 16;
 }
 #sidebar > ul {
 	list-style: none;
 	margin: 0px 0 0;
-	padding: 0;
+	padding: 0 20px;
 	position: absolute;
-	width: 220px;
+	width: 210px;
 }
 #sidebar > ul > li {
 	display: block;
@@ -206,7 +210,7 @@ hr{ border-top-color:#dadada;}
 /* Content */
 #content {
 	background: none repeat scroll 0 0 #1a1a1a;
-	margin-left: 220px;
+	margin-left: 250px;
 	margin-right: 0;
 	padding-bottom: 25px;
 	position: relative;
@@ -247,18 +251,24 @@ hr{ border-top-color:#dadada;}
 }
 /* Breadcrumb */
 #breadcrumb {
-	background-color: #fff;
+	background-color: #1a1a1a;
 	border-bottom: 1px solid #e3ebed;
 }
 #breadcrumb a {
-	padding: 8px 20px 8px 10px;
+	padding: 0px 20px 8px 10px;
 	display: inline-block;
+	width:125px;
+	height:52px;
 	background-image: url('../img/breadcrumb.png');
 	background-position: center right;
 	background-repeat: no-repeat;
-	font-size: 11px;
-	color: #666666;
+	font-size: 17px;
+	font-weight: 500;
+	text-align:center;
+	line-height:52px;
+	color: #fff;
 }
+#breadcrumb a:nth-child(1) { color:#ffcc00;}
 #breadcrumb a:hover {
 	color: #333333;
 }
@@ -1232,6 +1242,24 @@ form {
 #sidebar .stat {
     font-size: 11px;
 }
+
+
+
+
+
+/*language_dropdown*/
+.btn-group { padding:75px 55px; }
+.btn-group > .btn  { width:100px; background:#1a1a1a; border:none; }
+.btn-group > .btn .caret { 
+	border-bottom:4px solid #fff;
+	border-top:none;
+}
+.btn-group > .dropdown-menu { 
+	top:-85px;
+}
+
+
+
 /***********light-box-end***************/
 
 .btn-icon-pg ul {
@@ -1473,6 +1501,11 @@ form {
 	padding: 5px 4px 2px;
 }
 }
+
+
+/*add custom*/
+.tab-content  { background:#f3e9c3; }
+/**********************************responsive***************************************/
  @media (min-width: 481px) and (max-width: 970px) {
 body {
 	background:#49CCED
