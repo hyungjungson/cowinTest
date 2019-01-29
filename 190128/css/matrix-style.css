@@ -1505,6 +1505,9 @@ form {
 
 /*add custom*/
 .tab-content  { background:#f3e9c3; }
+
+.row-fluid .span4 { max-width:325px; }
+.row-fluid .span8 { width:68.5%; max-width:785px; }
 /**********************************responsive***************************************/
  @media (min-width: 481px) and (max-width: 970px) {
 body {
