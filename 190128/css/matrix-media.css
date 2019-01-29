@@ -32,7 +32,7 @@ body {
 #sidebar > ul li ul {
 	background-color: #373737;
 }
-#sidebar > ul li ul li a{ color:#939da8}
+#sidebar > ul li ul li a{ color:#fff}
 #sidebar > ul li ul li a:hover, #sidebar > ul li ul li.active a {
 	color: #080808;
 	background-color: #ffcc00;

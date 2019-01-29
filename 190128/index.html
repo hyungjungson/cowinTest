@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Matrix Admin</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
-<link rel="stylesheet" href="css/fullcalendar.css" />
-<link rel="stylesheet" href="css/matrix-style.css" />
-<link rel="stylesheet" href="css/matrix-media.css" />
-<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/jquery.gritter.css" />
-<!--logo_font-->
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet"> 
+  <title>Matrix Admin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="css/fullcalendar.css" />
+  <link rel="stylesheet" href="css/uniform.css" />
+  <link rel="stylesheet" href="css/select2.css" />
+  <link rel="stylesheet" href="css/matrix-style.css" />
+  <link rel="stylesheet" href="css/matrix-media.css" />
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.gritter.css" />
+  <!--logo_font-->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
 </head>
+
 <body>
 
 
-<!--header_wrap-->
-<div class="header_wrap">
-<!--Header-part-->
-<div id="header">
-  <h1><a href="dashboard.html">COWINPOT</a></h1>
-<!--top-Header-menu--> 
-<div id="user-nav" class="navbar navbar-inverse">
-    <ul class="nav">
-      <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
-          <li class="divider"></li>
-          <li><a href="#"><i class="icon-check"></i> My Tasks</a></li>
-          <li class="divider"></li>
-          <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+  <!--header_wrap-->
+  <div class="header_wrap">
+    <!--Header-part-->
+    <div id="header">
+      <h1><a href="dashboard.html">COWINPOT</a></h1>
+      <!--top-Header-menu-->
+      <div id="user-nav" class="navbar navbar-inverse">
+        <ul class="nav">
+          <li class="dropdown" id="profile-messages"><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages"
+              class="dropdown-toggle"><i class="icon icon-user"></i> <span class="text">Welcome User</span><b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-check"></i> My Tasks</a></li>
+              <li class="divider"></li>
+              <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i
+                class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span>
+              <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i> new message</a></li>
+              <li class="divider"></li>
+              <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i> inbox</a></li>
+              <li class="divider"></li>
+              <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i> outbox</a></li>
+              <li class="divider"></li>
+              <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i> trash</a></li>
+            </ul>
+          </li>
+          <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
+          <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
         </ul>
-      </li>
-      <li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span> <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i> new message</a></li>
-          <li class="divider"></li>
-          <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i> inbox</a></li>
-          <li class="divider"></li>
-          <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i> outbox</a></li>
-          <li class="divider"></li>
-          <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i> trash</a></li>
-        </ul>
-      </li>
-      <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
-      <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
-    </ul>
+      </div>
+      <!--close-top-Header-menu-->
+    </div>
+    <!--close-Header-part-->
   </div>
-  <!--close-top-Header-menu-->  
-</div>
-<!--close-Header-part--> 
-</div>
-<!--//header_wrap-->
+  <!--//header_wrap-->
 
 
 
-<!--contents_wrap-->
-<div class="content_wrap">
-<!--sidebar-menu-->
-<div id="sidebar">
+  <!--contents_wrap-->
+  <div class="content_wrap">
+    <!--sidebar-menu-->
+    <div id="sidebar">
 
-<!--start-top-serch-->
-<div id="search">
-    <input type="text" placeholder="Search"/>
-    <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
-  </div>
-  <!--close-top-serch-->
-  
+      <!--start-top-serch-->
+      <div id="search">
+        <input type="text" placeholder="Search" />
+        <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+      </div>
+      <!--close-top-serch-->
 
 
-  <a href="#" class="visible-phone"><i class="icon icon-home"></i> All Games</a>
-  <ul>
-    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>All Games</span></a> </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>FOOTBALL</span></a> 
+
+      <a href="#" class="visible-phone"><i class="icon icon-home"></i> All Games</a>
       <ul>
-          <li><a href="form-common.html">프리미어 리그</a></li>
-          <li><a href="form-validation.html">프리미어 리그2</a></li>
-          <li><a href="form-wizard.html">WORLD</a></li>
-          <li><a href="form-wizard.html">WORLD CUP 2022</a></li>
-          <li><a href="form-wizard.html">KOREA</a></li>
-        </ul>
-    </li>
-    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>BASEBALL</span></a> </li>
-    <li><a href="tables.html"><i class="icon icon-th"></i> <span>BASKETBALL</span></a></li>
-    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>TENNIS</span></a></li>
+        <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>All Games</span></a> </li>
+        <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>FOOTBALL</span></a>
+          <ul>
+            <li><a href="form-common.html">프리미어 리그</a></li>
+            <li><a href="form-validation.html">프리미어 리그2</a></li>
+            <li><a href="form-wizard.html">WORLD</a></li>
+            <li><a href="form-wizard.html">WORLD CUP 2022</a></li>
+            <li><a href="form-wizard.html">KOREA</a></li>
+          </ul>
+        </li>
+        <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>BASEBALL</span></a> </li>
+        <li><a href="tables.html"><i class="icon icon-th"></i> <span>BASKETBALL</span></a></li>
+        <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>TENNIS</span></a></li>
 
 
-    <!--
+        <!--
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
       <ul>
         <li><a href="form-common.html">Basic Form</a></li>
@@ -133,43 +140,43 @@
   -->
 
 
-<!--langauge_dropdown-->
+        <!--langauge_dropdown-->
 
-    <li class="btn-group">
-        <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle">한국어 <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">繁體中文</a></li>
-          <li><a href="#">Tiếng Việt</a></li>
-          <li><a href="#">简体中文</a></li>
-          <!--<li class="divider"></li>-->
-          <li><a href="#">English</a></li>
-        </ul>
-      </li>
+        <li class="btn-group">
+          <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle">한국어 <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">繁體中文</a></li>
+            <li><a href="#">Tiếng Việt</a></li>
+            <li><a href="#">简体中文</a></li>
+            <!--<li class="divider"></li>-->
+            <li><a href="#">English</a></li>
+          </ul>
+        </li>
 
-<!--//language_dropdown-->
+        <!--//language_dropdown-->
 
 
 
-  </ul>
-</div>
-<!--sidebar-menu-->
-
-<!--main-container-part-->
-<div id="content">
-<!--breadcrumbs-->
-  <div id="content-header">
-    <div id="breadcrumb"> 
-      <a href="index.html" title="Go to Home" class="tip-bottom"> All</a>
-      <a href="index.html" title="Go to Home" class="tip-bottom"> 1X2</a>
-      <a href="index.html" title="Go to Home" class="tip-bottom"> Handicap</a>
-      <a href="index.html" title="Go to Home" class="tip-bottom"> Live</a>
-      <a href="index.html" title="Go to Home" class="tip-bottom"> Result</a>
+      </ul>
     </div>
-  </div>
-<!--End-breadcrumbs-->
+    <!--sidebar-menu-->
 
-<!--Action boxes-->
-<!--
+    <!--main-container-part-->
+    <div id="content">
+      <!--breadcrumbs-->
+      <div id="content-header">
+        <div id="breadcrumb">
+          <a href="index.html" title="Go to Home" class="tip-bottom"> All</a>
+          <a href="index.html" title="Go to Home" class="tip-bottom"> 1X2</a>
+          <a href="index.html" title="Go to Home" class="tip-bottom"> Handicap</a>
+          <a href="index.html" title="Go to Home" class="tip-bottom"> Live</a>
+          <a href="index.html" title="Go to Home" class="tip-bottom"> Result</a>
+        </div>
+      </div>
+      <!--End-breadcrumbs-->
+
+      <!--Action boxes-->
+      <!--
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
@@ -186,198 +193,224 @@
 
       </ul>
     </div>-->
-<!--End-Action boxes-->    
-<!--/div>-->
-<!--//contents_wrap-->
+      <!--End-Action boxes-->
+      <!--/div>-->
+      <!--//contents_wrap-->
 
 
 
 
-<div class="row-fluid">
-<!--main_bannner-->
-<div class="span8">
-  <div class="widget-box">
-    <img class="main_banner" src="http://placehold.it/785x300/b6b3b3" alt="banner" />
-  </div>
+      <div class="row-fluid">
+        <!--main_bannner-->
+        <div class="span8">
+          <div class="widget-box">
+            <img class="main_banner" src="http://placehold.it/785x300/b6b3b3" alt="banner" />
+          </div>
 
-</div>
-<!--//main_banner-->
+        </div>
+        <!--//main_banner-->
 
-<!--tab_slip-->
-<div class="span4">
-<div class="widget-box">
-  <div class="widget-title">
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#tab1">BET SLIP</a></li>
-      <li><a data-toggle="tab" href="#tab2">MY BETS</a></li>
-      <!--<li><a data-toggle="tab" href="#tab3">Tab3</a></li>-->
-    </ul>
-  </div>
-  <div class="widget-content tab-content">
-    <div id="tab1" class="tab-pane active">
-      <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment.</p>
-      <img src="img/demo/demo-image1.jpg" alt="demo-image"/></div>
-    <div id="tab2" class="tab-pane"> <img src="img/demo/demo-image2.jpg" alt="demo-image"/>
-      <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment.</p>
-    </div>
-    <!--
+        <!--tab_slip-->
+        <div class="span4">
+          <div class="widget-box">
+            <div class="widget-title">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#tab1">BET SLIP</a></li>
+                <li><a data-toggle="tab" href="#tab2">MY BETS</a></li>
+                <!--<li><a data-toggle="tab" href="#tab3">Tab3</a></li>-->
+              </ul>
+            </div>
+            <div class="widget-content tab-content">
+              <div id="tab1" class="tab-pane active">
+                <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment.
+                  Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full
+                  of waffle to pad out the comment.</p>
+                <img src="img/demo/demo-image1.jpg" alt="demo-image" />
+              </div>
+              <div id="tab2" class="tab-pane"> <img src="img/demo/demo-image2.jpg" alt="demo-image" />
+                <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment.
+                  Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full
+                  of waffle to pad out the comment.</p>
+              </div>
+              <!--
     <div id="tab3" class="tab-pane">
       <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. </p>
       <img src="img/demo/demo-image3.jpg" alt="demo-image"/></div>
   </div>
   -->
-</div>
-</div>
-<!--tab_slip-->
-</div>
-
-
-
-
-
-
-  
-    <div class="row-fluid">
-      <!--mid_table-->
-      <div class="span8">
-          <div class="widget-box">
-              <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                <h5>Data table</h5>
-              </div>
-              <div class="widget-content nopadding">
-                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid"><div class=""><div id="DataTables_Table_0_length" class="dataTables_length"><label>Show <div class="select2-container" id="s2id_autogen1">    <a href="#" onclick="return false;" class="select2-choice">   <span>10</span><abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a>    <div class="select2-drop select2-offscreen">   <div class="select2-search">       <input type="text" autocomplete="off" class="select2-input" tabindex="0">   </div>   <ul class="select2-results">   </ul></div></div><select size="1" name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" style="display: none;"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><table class="table table-bordered data-table dataTable" id="DataTables_Table_0">
-                  <thead>
-                    <tr role="row"><th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 185px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending"><div class="DataTables_sort_wrapper">Rendering engine<span class="DataTables_sort_icon css_right ui-icon ui-icon-triangle-1-n"></span></div></th><th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 304px;" aria-label="Browser: activate to sort column ascending"><div class="DataTables_sort_wrapper">Browser<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div></th><th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 275px;" aria-label="Platform(s): activate to sort column ascending"><div class="DataTables_sort_wrapper">Platform(s)<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div></th><th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 164px;" aria-label="Engine version: activate to sort column ascending"><div class="DataTables_sort_wrapper">Engine version<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div></th></tr>
-                  </thead>
-                  
-                <tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="gradeA odd">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Firefox 1.0</td>
-                      <td class=" ">Win 98+ / OSX.2+</td>
-                      <td class="center ">1.7</td>
-                    </tr><tr class="gradeA even">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Firefox 1.5</td>
-                      <td class=" ">Win 98+ / OSX.2+</td>
-                      <td class="center ">1.8</td>
-                    </tr><tr class="gradeA odd">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Firefox 2.0</td>
-                      <td class=" ">Win 98+ / OSX.2+</td>
-                      <td class="center ">1.8</td>
-                    </tr><tr class="gradeA even">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Firefox 3.0</td>
-                      <td class=" ">Win 2k+ / OSX.3+</td>
-                      <td class="center ">1.9</td>
-                    </tr><tr class="gradeA odd">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Camino 1.0</td>
-                      <td class=" ">OSX.2+</td>
-                      <td class="center ">1.8</td>
-                    </tr><tr class="gradeA even">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Camino 1.5</td>
-                      <td class=" ">OSX.3+</td>
-                      <td class="center ">1.8</td>
-                    </tr><tr class="gradeA odd">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Netscape 7.2</td>
-                      <td class=" ">Win 95+ / Mac OS 8.6-9.2</td>
-                      <td class="center ">1.7</td>
-                    </tr><tr class="gradeA even">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Netscape Browser 8</td>
-                      <td class=" ">Win 98SE+</td>
-                      <td class="center ">1.7</td>
-                    </tr><tr class="gradeA odd">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Netscape Navigator 9</td>
-                      <td class=" ">Win 98+ / OSX.2+</td>
-                      <td class="center ">1.8</td>
-                    </tr><tr class="gradeA even">
-                      <td class="  sorting_1">Gecko</td>
-                      <td class=" ">Mozilla 1.0</td>
-                      <td class=" ">Win 95+ / OSX.1+</td>
-                      <td class="center ">1</td>
-                    </tr></tbody></table><div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix"><div class="dataTables_filter" id="DataTables_Table_0_filter"><label>Search: <input type="text" aria-controls="DataTables_Table_0"></label></div><div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers" id="DataTables_Table_0_paginate"><a tabindex="0" class="first ui-corner-tl ui-corner-bl fg-button ui-button ui-state-default ui-state-disabled" id="DataTables_Table_0_first">First</a><a tabindex="0" class="previous fg-button ui-button ui-state-default ui-state-disabled" id="DataTables_Table_0_previous">Previous</a><span><a tabindex="0" class="fg-button ui-button ui-state-default ui-state-disabled">1</a><a tabindex="0" class="fg-button ui-button ui-state-default">2</a><a tabindex="0" class="fg-button ui-button ui-state-default">3</a><a tabindex="0" class="fg-button ui-button ui-state-default">4</a><a tabindex="0" class="fg-button ui-button ui-state-default">5</a></span><a tabindex="0" class="next fg-button ui-button ui-state-default" id="DataTables_Table_0_next">Next</a><a tabindex="0" class="last ui-corner-tr ui-corner-br fg-button ui-button ui-state-default" id="DataTables_Table_0_last">Last</a></div></div></div>
-              </div>
             </div>
+          </div>
+          <!--tab_slip-->
+        </div>
+
+
+
+
+
+
+
+        <div class="row-fluid">
+          <!--mid_table-->
+          <div class="span8">
+
+            
+
+
+                      <div class="widget-box">
+                        <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+                          <h5>축구</h5>
+                        </div>
+                        <div class="widget-content nopadding">
+                          <table class="table table-bordered data-table">
+                            <thead>
+                              <tr>
+                                <th>프리미어 리그</th>
+                                <th>발렌시아</th>
+                                <th>VS</th>
+                                <th>리버풀</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="gradeX">
+                                <td>Trident</td>
+                                <td>Internet
+                                  Explorer 4.0</td>
+                                <td>Win 95+</td>
+                                <td class="center">4</td>
+                              </tr>
+                              <tr class="gradeC">
+                                <td>Trident</td>
+                                <td>Internet
+                                  Explorer 5.0</td>
+                                <td>Win 95+</td>
+                                <td class="center">5</td>
+                              </tr>
+                              <tr class="gradeA">
+                                <td>Trident</td>
+                                <td>Internet
+                                  Explorer 5.5</td>
+                                <td>Win 95+</td>
+                                <td class="center">5.5</td>
+                              </tr>
+                              <tr class="gradeA">
+                                <td>Trident</td>
+                                <td>Internet
+                                  Explorer 6</td>
+                                <td>Win 98+</td>
+                                <td class="center">6</td>
+                              </tr>
+                              <tr class="gradeA">
+                                <td>Trident</td>
+                                <td>Internet Explorer 7</td>
+                                <td>Win XP SP2+</td>
+                                <td class="center">7</td>
+                              </tr>
+                              <tr class="gradeA">
+                                <td>Trident</td>
+                                <td>AOL browser (AOL desktop)</td>
+                                <td>Win XP</td>
+                                <td class="center">6</td>
+                              </tr>
+                              <tr class="gradeA">
+                                <td>Gecko</td>
+                                <td>Firefox 1.0</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td class="center">1.7</td>
+                              </tr>
+                              <tr class="gradeA">
+                                <td>Gecko</td>
+                                <td>Firefox 1.5</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td class="center">1.8</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+
+
+
+
+            
+
+
+          </div>
+          <!--//mid_table-->
+
+          <!--right_banner-->
+          <div class="span4">
+            <a href="#"><img src="http://placehold.it/325x110" alt="cilc v verdasco banner" /></a>
+            <a href="#"><img src="http://placehold.it/325x110" alt="getafe gv alaves banner" /></a>
+          </div>
+          <!--//right_banner-->
+
+
+        </div>
+
 
 
       </div>
-      <!--//mid_table-->
-
-      <!--right_banner-->
-      <div class="span4">
-        <a href="#"><img src="http://placehold.it/325x110" alt="cilc v verdasco banner"/></a>
-        <a href="#"><img src="http://placehold.it/325x110" alt="getafe gv alaves banner"/></a>
-      </div>
-      <!--//right_banner-->
-
-
     </div>
 
+    <!--end-main-container-part-->
 
+    <!--Footer-part-->
 
-  </div>
-</div>
+    <div class="row-fluid">
+      <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a>
+      </div>
+    </div>
 
-<!--end-main-container-part-->
+    <!--end-Footer-part-->
 
-<!--Footer-part-->
+    <script src="js/excanvas.min.js"></script> 
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/jquery.ui.custom.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/jquery.flot.min.js"></script> 
+    <script src="js/jquery.flot.resize.min.js"></script> 
+    <script src="js/jquery.peity.min.js"></script> 
+    <script src="js/fullcalendar.min.js"></script> 
+    <script src="js/matrix.js"></script> 
+    <script src="js/matrix.dashboard.js"></script> 
+    <script src="js/jquery.gritter.min.js"></script> 
+    <script src="js/matrix.interface.js"></script> 
+    <script src="js/matrix.chat.js"></script> 
+    <script src="js/jquery.validate.js"></script> 
+    <script src="js/matrix.form_validation.js"></script> 
+    <script src="js/jquery.wizard.js"></script> 
+    <script src="js/jquery.uniform.js"></script> 
+    <script src="js/select2.min.js"></script> 
+    <script src="js/matrix.popover.js"></script> 
+    <script src="js/jquery.dataTables.min.js"></script> 
+    <script src="js/matrix.tables.js"></script> 
 
-<div class="row-fluid">
-  <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a> </div>
-</div>
+    <script type="text/javascript">
+      // This function is called from the pop-up menus to transfer to
+      // a different page. Ignore if the value returned is a null string:
+      function goPage(newURL) {
 
-<!--end-Footer-part-->
+        // if url is empty, skip the menu dividers and reset the menu selection to default
+        if (newURL != "") {
 
-<script src="js/excanvas.min.js"></script> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/jquery.ui.custom.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.flot.min.js"></script> 
-<script src="js/jquery.flot.resize.min.js"></script> 
-<script src="js/jquery.peity.min.js"></script> 
-<script src="js/fullcalendar.min.js"></script> 
-<script src="js/matrix.js"></script> 
-<script src="js/matrix.dashboard.js"></script> 
-<script src="js/jquery.gritter.min.js"></script> 
-<script src="js/matrix.interface.js"></script> 
-<script src="js/matrix.chat.js"></script> 
-<script src="js/jquery.validate.js"></script> 
-<script src="js/matrix.form_validation.js"></script> 
-<script src="js/jquery.wizard.js"></script> 
-<script src="js/jquery.uniform.js"></script> 
-<script src="js/select2.min.js"></script> 
-<script src="js/matrix.popover.js"></script> 
-<script src="js/jquery.dataTables.min.js"></script> 
-<script src="js/matrix.tables.js"></script> 
-
-<script type="text/javascript">
-  // This function is called from the pop-up menus to transfer to
-  // a different page. Ignore if the value returned is a null string:
-  function goPage (newURL) {
-
-      // if url is empty, skip the menu dividers and reset the menu selection to default
-      if (newURL != "") {
-      
           // if url is "-", it is this page -- reset the menu:
-          if (newURL == "-" ) {
-              resetMenu();            
-          } 
+          if (newURL == "-") {
+            resetMenu();
+          }
           // else, send page to designated URL            
-          else {  
+          else {
             document.location.href = newURL;
           }
+        }
       }
-  }
 
-// resets the menu selection upon entry to this page:
-function resetMenu() {
-   document.gomenu.selector.selectedIndex = 2;
-}
-</script>
+      // resets the menu selection upon entry to this page:
+      function resetMenu() {
+        document.gomenu.selector.selectedIndex = 2;
+      }
+    </script>
 </body>
+
 </html>
